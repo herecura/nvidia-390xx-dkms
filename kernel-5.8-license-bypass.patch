@@ -7,7 +7,7 @@ index f7f1def..7a15893 100644
  
  #if defined(MODULE_LICENSE)
 -  MODULE_LICENSE("NVIDIA");
-+  MODULE_LICENSE("GPL NVIDIA");
++  MODULE_LICENSE("GPL");
  #endif
  #if defined(MODULE_INFO)
    MODULE_INFO(supported, "external");
@@ -20,7 +20,7 @@ index 59c69a0..2bbc26f 100644
  
  #if defined(MODULE_LICENSE)
 -MODULE_LICENSE("NVIDIA");
-+MODULE_LICENSE("GPL NVIDIA");
++MODULE_LICENSE("GPL");
  #endif
  #if defined(MODULE_INFO)
  MODULE_INFO(supported, "external");
@@ -33,7 +33,7 @@ index 15983f6..e87a095 100644
  #if (NV_BUILD_MODULE_INSTANCES != 0)
  #if defined(MODULE_LICENSE)
 -MODULE_LICENSE("NVIDIA");
-+MODULE_LICENSE("GPL NVIDIA");
++MODULE_LICENSE("GPL");
  #endif
  #if defined(MODULE_INFO)
  MODULE_INFO(supported, "external");
