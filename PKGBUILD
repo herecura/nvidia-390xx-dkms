@@ -5,7 +5,7 @@
 
 pkgname=nvidia-390xx-dkms
 pkgver=390.138
-pkgrel=4
+pkgrel=5
 pkgdesc="NVIDIA dkms drivers for linux, 390xx legacy branch"
 arch=('x86_64')
 url="https://www.nvidia.com/"
@@ -21,7 +21,7 @@ source=("https://us.download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/${_pkg}.r
 sha256sums=('a34a19b618be0eb06c4699247489833a8f22c59423f246248614e0a59b1508da'
             '3c35037527676533852760537312c9e12b99fed0964949389bad95b919331015'
             '41aa6e6ecd0290f65ccead506313991596a9b32d468e4951310b6951623f155c'
-            'a3943739d52fc77f2ba5eb1aedb5348cc92f9cfd10cf9cb48594232697ec7dad')
+            '70b4d0e5d03e7a2afb21c97b2db87cc3210eca89e19e1b8bbb911979813b0fd9')
 
 prepare() {
     sh "${_pkg}.run" --extract-only

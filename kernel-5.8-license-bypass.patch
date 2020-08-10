@@ -1,39 +1,23 @@
-diff --git a/kernel/nvidia-modeset/nvidia-modeset-linux.c b/kernel/nvidia-modeset/nvidia-modeset-linux.c
-index f7f1def..7a15893 100644
---- a/kernel/nvidia-modeset/nvidia-modeset-linux.c
-+++ b/kernel/nvidia-modeset/nvidia-modeset-linux.c
-@@ -1301,7 +1301,7 @@ module_init(nvkms_init);
- module_exit(nvkms_exit);
+diff --git a/kernel/nvidia-uvm/uvm_common.c b/kernel/nvidia-uvm/uvm_common.c
+index 0f4516a..9e9811e 100644
+--- a/kernel/nvidia-uvm/uvm_common.c
++++ b/kernel/nvidia-uvm/uvm_common.c
+@@ -379,5 +379,5 @@ module_param(uvm_enable_builtin_tests, int, S_IRUGO);
+ MODULE_PARM_DESC(uvm_enable_builtin_tests,
+                  "Enable the UVM built-in tests. (This is a security risk)");
  
- #if defined(MODULE_LICENSE)
--  MODULE_LICENSE("NVIDIA");
-+  MODULE_LICENSE("GPL");
- #endif
- #if defined(MODULE_INFO)
-   MODULE_INFO(supported, "external");
-diff --git a/kernel/nvidia/nv-frontend.c b/kernel/nvidia/nv-frontend.c
-index 59c69a0..2bbc26f 100644
---- a/kernel/nvidia/nv-frontend.c
-+++ b/kernel/nvidia/nv-frontend.c
-@@ -15,7 +15,7 @@
- #include "nv-frontend.h"
- 
- #if defined(MODULE_LICENSE)
--MODULE_LICENSE("NVIDIA");
+-MODULE_LICENSE("MIT");
 +MODULE_LICENSE("GPL");
- #endif
- #if defined(MODULE_INFO)
  MODULE_INFO(supported, "external");
-diff --git a/kernel/nvidia/nv.c b/kernel/nvidia/nv.c
-index 15983f6..e87a095 100644
---- a/kernel/nvidia/nv.c
-+++ b/kernel/nvidia/nv.c
-@@ -43,7 +43,7 @@
+diff --git a/kernel/nvidia-uvm/uvm_unsupported.c b/kernel/nvidia-uvm/uvm_unsupported.c
+index 0419121..1ccd1f4 100644
+--- a/kernel/nvidia-uvm/uvm_unsupported.c
++++ b/kernel/nvidia-uvm/uvm_unsupported.c
+@@ -171,6 +171,6 @@ static void __exit uvm_unsupported_exit(void)
+ module_init(uvm_unsupported_module_init);
+ module_exit(uvm_unsupported_exit);
  
- #if (NV_BUILD_MODULE_INSTANCES != 0)
- #if defined(MODULE_LICENSE)
--MODULE_LICENSE("NVIDIA");
+-MODULE_LICENSE("MIT");
 +MODULE_LICENSE("GPL");
- #endif
- #if defined(MODULE_INFO)
  MODULE_INFO(supported, "external");
+ 
